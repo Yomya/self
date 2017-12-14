@@ -1,0 +1,642 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+  <!--
+                         .          .oo.
+                       .o8        .88' `8.
+   .oooo.   oooo d8b .o888oo      88.  .8'
+  `P  )88b  `888""8P   888        `88.8P
+   .oP"888   888       888         d888[.8'
+  d8(  888   888       888 .      88' `88.     "                                                       "
+  `Y888""8o d888b      "888"      `bodP'`88.      __________________________________________________
+
+
+
+   .o8                           oooo                    oooo              .oooooo..o                             .o8
+  "888                           `888                    `888             d8P'    `Y8                            "888
+   888oooo.  oooo    ooo          888  .ooooo.   .oooo.o  888 .oo.        Y88bo.       .ooooo.  ooo. .oo.    .oooo888   .ooooo.  oooo d8b
+   d88' `88b  `88.  .8'           888 d88' `88b d88(  "8  888P"Y88b        `"Y8888o.  d88' `88b `888P"Y88b  d88' `888  d88' `88b `888""8P
+   888   888   `88..8'            888 888   888 `"Y88b.   888   888            `"Y88b 888ooo888  888   888  888   888  888ooo888  888
+   888   888    `888'             888 888   888 o.  )88b  888   888       oo     .d8P 888    .o  888   888  888   888  888    .o  888
+   `Y8bod8P'     .8'          .o. 88P `Y8bod8P' 8""888P' o888o o888o      8""88888P'  `Y8bod8P' o888o o888o `Y8bod88P" `Y8bod8P' d888b
+             .o..P'           `Y888P
+             `Y8P'
+
+  website also by josh sender, but he isn't proud of it
+  -->
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Josh Sender (art)</title>
+  <meta name="description" content="Josh Sender (b. 1991, New York) is an artist working online. He has a Multidisciplinary MFA from the Mount Royal School of Art at MICA and a BFA from The College of New Jersey. He has had solo exhibitions in Baltimore and New Jersey, and has also been included in group shows and screenings in New York, Washington DC, South Korea, Baltimore, New Jersey, and of course, online.">
+  <meta name="author" content="Josh Sender">
+  <!-- Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="http://joshsender.com/images/joshsender_.jpg" />
+  <meta name="theme-color" content="#0659e3">
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="js/js-list.js"></script>
+  <script src="js/core.js"></script>
+  <script>
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 190;
+    var ellipsestext = "...";
+    var moretext = "Read More";
+    var lesstext = "← Less";
+
+
+    $('.more').each(function() {
+        var content = $(this).html();
+
+        if(content.length > showChar) {
+
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+            $(this).html(html);
+        }
+
+    });
+
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+  </script>
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/alll-together.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-29881851-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <!-- End Analytics -->
+</head>
+<body>
+  <div class="invert-base"></div>
+  <div class="gradienttop"></div>
+    <!-- Loading beep boop
+      <div class="name-bg bg-splash">
+        <div class="title">Josh Sender</div>
+      </div>-->
+
+    <!-- just follow along the expectations of everyone around you -->
+    <div class="centerthat">
+      <ul class="homepage-menu">
+          <a class="index-open-bar"><li>Index</li></a>
+        <a class="it-was-always-me-2"><li>About</li></a>
+      </ul>
+    </div>
+
+  <!-- you can always find your way back -->
+  <div class="index-x"></div>
+
+  <!-- submenu - the history of everything -->
+  <div class="index">
+    <nav class="navbar">
+        <ul class="nav">
+          <div class="nav-title">Index</div>
+          <li><a class="index-link" href="#returntosender"></a></li>
+          <li><a class="index-link" href="#an-hour-poorly-spent">An Hour Poorly Spent, 2017</a></li>
+          <!-- <li><a class="index-link" href="#huh-clever">Huh, Clever, 2017</a></li> -->
+          <!-- <li><a class="index-link" href="#gallery-institute">Gallery Institute, 2017</a></li> -->
+          <li><a class="index-link" href="#new-work-2016">New Work, 2016</a></li>
+          <li><a class="index-link" href="#exhibitionspaces">Exhibition Spac.es, 2016</a></li>
+          <li><a class="index-link" href="#it-was-all-very-impressive-i">It Was All Very Impressive I, 2016</a></li>
+          <li><a class="index-link" href="#it-was-all-very-impressive-ii">It Was All Very Impressive II, 2016</a></li>
+          <li><a class="index-link" href="#museum-of-translated-objects">Museum of Translated Objects, 2016</a></li>
+          <li><a class="index-link" href="#artifacts-published-works">Artifacts, Published Works, 2016</a></li>
+          <li><a class="index-link" href="#mirage-or-i-am-large-i-contain-multitudes">Mirage, or, I am Large, I Contain Multitudes, 2016</a></li>
+          <li><a class="index-link" href="#that-old-present-tense">That Old Present Tense, 2016</a></li>
+          <li><a class="index-link" href="#on-edge">On Edge, 2016</a></li>
+          <li><a class="index-link" href="#new-work">New Work, 2015</a></li>
+          <li><a class="index-link" href="#oy-on-time">Oy! On Time!, 2015</a></li>
+          <li><a class="index-link" href="#vie-vying">Vie Vying, 2015</a></li>
+          <li><a class="index-link" href="#blghded">blgh ded, 2015</a></li>
+          <li><a class="index-link" href="#martyr-images">Martyr Images, 2015</a></li>
+          <!-- <li><a class="index-link" href="#documents">Documents., 2015</a></li> -->
+          <li><a class="index-link" href="#monument-feed">Monument Feed, 2014</a></li>
+          <li><a class="index-link" href="#seeing-lassoing-wild-horses">Seeing Lassoing Wild Horses, 2014</a></li>
+          <li><a class="index-link" href="#money-landscape-money">$ Landscape $, 2014</a></li>
+          <li><a class="index-link" href="#everyone-looks-so-familiar">Everyone Looks So Familiar, 2014</a></li>
+          <li><a class="index-link" href="#contrived-permanence">Contrived Permanence, 2013</a></li>
+          <li><a class="index-link" href="#unpublished-stories">Unpublished Stories, 2013</a></li>
+        </ul>
+    </nav>
+  </div>
+
+  <!-- Shadows -->
+  <div class="homepage-josh"></div>
+  <button class="mobile-close">×</button>
+  <div class="gradient"></div>
+
+  <!-- Shallow Shadows -->
+  <div class="shallow-shadows">
+    <div class="about-full">
+    <div class="about-fuller">
+      <div class="about-title">About</div>
+     <p>Josh Sender (b. 1991, New York) is an artist working online. He has a Multidisciplinary MFA from the Mount Royal School of Art at MICA and a BFA from The College of New Jersey.</p> <p>He has had solo exhibitions in Baltimore and New Jersey, and has also been included in group shows and screenings in New York, South Korea, Washington DC, Baltimore, New Jersey, and of course, <span class="italic">online.</span></p>
+
+      <p class="italic">If you'd like a free print of any of the works on this site, send Sender an email.<br></p>
+     <!--  <div class="about-title">Ongoing Projects</div>
+        <div class="contact">
+          <ul>
+              <li><a href="http://nevver.work" target="_blank">Nevver.work</a></li>
+              <li><a href="http://exhibitionspac.es" target="_blank" >Exhibition Spac.es</a></li>
+          </ul>
+      </div><br> -->
+      <div class="about-title">Professional</div>
+      <div class="contact">
+        <ul>
+            <li><a href="https://docs.google.com/document/d/1O69A8gq7WwGSHkVCblPwu1keut8OSbbgIA6xciYcnpU/edit" target="_blank">Artist CV</a></li>
+            <li><a href="https://docs.google.com/document/d/1CcEPYaRVNtTA6Nhaorj45i67DbPyro62vCN17PrE6kY/edit" target="_blank">Statement</a></li>
+            <li><a href="http://joshsender.design" target="_blank">Design??</a></li>
+            <!-- <li><a href="mailto:josh.sender@gmail.com?subject=What's This I Hear about an Award-Winning Design Portfolio?" target="_blank" class="designportfolio">Design portfolio available upon request</a></li> -->
+        </ul>
+      </div><br>
+
+      <div class="about-title">Contact</div>
+        <div class="contact">
+          <ul>
+              <li><a href="http://facebook.com/joshsender" target="_blank">Facebook</a></li>
+              <li><a href="mailto:josh.sender@gmail.com" target="_blank" >Email</a></li>
+              <li><a href="http://instagram.com/joshsender" target="_blank" >Instagram</a></li>
+              <li><a href="http://twitter.com/josh_sender" target="_blank" >Twitter</a></li>
+              <div class="thank-you-for-being" ><a href="http://ambereveanderson.com" target="_blank"title="♡ Amber Eve Anderson ♡">❤</a></div>
+          </ul>
+      </div><br>
+
+     <!-- <div class="about-title">Day Job</div>
+      <p>He currently lives in Baltimore, Maryland and works as a Digital Designer at Black & Black Creative in Chelsea, New York.<span class="" style="display: none;">Long commute.</span><br><br><a href="http://design.joshsender.com" target="_blank" class="designportfolio">Design Portfolio</a></p> 
+      </div>-->
+
+
+  </div></div>
+  </div>
+
+  <div class="homepage-copycontainer">
+    <div class="homepage-copy">
+      <span class="it-was-always-me">Josh Sender</span> (b. 1991, New York) is an artist working online. He has a Multidisciplinary MFA from the Mount Royal School of Art at MICA and shows art internationally. <!-- Sometimes he's an award-winning graphic designer. -->Once upon a time he was an award-winning web designer.
+    </div>
+  </div>
+  <div class="redonwhite">
+
+  <!-- What you're here for, yeah? -->
+
+    <section class="work-page">
+    <div id="returntosender"></div>
+
+        <article id="an-hour-poorly-spent" class="content">
+              <div class="index-full">
+            <div class="index-title">An Hour Poorly Spent, 2017</div>
+            <p>An Hour Poorly Spent is a regularly updated online art project. Each chapter is a sketch for potential projects and proposals.<a href="http://anhourpoorlyspent.com" target="_blank" class="runover">www.anhourpoorlyspent.com</a></p>
+          <div class="aloneimg-prev"><a href="http://anhourpoorlyspent.com" target="_blank"><img src="picture/anhourpoorlyspentcom.jpg"/></a></div>
+          </div>
+        </article>
+
+ <!--        <article id="huh-clever" class="content">
+              <div class="index-full">
+            <div class="index-title">Huh, Clever, 2017</div>
+            <p>Online showcase and catalogue of smart design solutions, coming soon. <a href="http://huhclever.com" target="_blank" class="runover">www.huhclever.com</a></p>
+          <div class="aloneimg-prev"><img src="picture/huhclever.jpg"/></div>
+          </div>
+        </article> -->
+
+<!--           <article id="gallery-institute" class="content">
+              <div class="index-full">
+            <div class="index-title">Gallery Institute, 2017</div>
+            <p>Online collaborative experimental web-space, coming soon. <a href="http://gallery.institute" target="_blank" class="runover">www.gallery.institute</a></p>
+          <div class="aloneimg-prev"><img src="picture/galleryinstitute.jpg"/></div>
+          </div>
+        </article> -->
+
+          <article id="new-work-2016" class="content">
+              <div class="index-full">
+            <div class="index-title">New Work, 2016</div>
+            <p>Gestural distortions within empty contemporary spaces collected for Exbhition Spac.es, bending the architecture into and onto itself.<br><br> <span class="runover italic">Digital Images, Archival Prints</span> </p>
+            <div class="stake">
+              <div><img src="picture/newwork-documents.jpg"/></div>
+              <div><img data-lazy="index/newwork2016/newwork2-documents.jpg"/></div>
+              <div><img data-lazy="index/newwork2016/newwork2.jpg"/></div>
+              <div><img data-lazy="index/newwork2016/newwork.jpg"/></div>
+            </div>
+          </div>
+        </article>
+
+        <article id="exhibitionspaces" class="content">
+          <div class="index-full">
+            <div class="index-title">Exhibition Spac.es, 2016</div>
+            <p class="more">I've been using a database of over 3000 emptied contemporary exhibition spaces for the production and showing of my work own work. In 2016 I built Exhibition Spac.es to make the database available online. This online database serves as a resource for other emerging and early-career artists in establishing their online and documented presence. Exhibition Spac.es is a regularly updated free database of high-resolution emptied contemporary exhibition spaces and frames, as well as tutorials and resources to aid less digital-savvy artists compile their own non-real documentation or implied installations. The images and resources are published under the Creative Commons Zero license (free to copy, modify, distribute and use the photos for free, including commercial purposes, without asking permission).  <a href="http://exhibitionspac.es" target="_blank" class="runover">www.exhibitionspac.es</a></p><p><span class="runover italic">Online Archive & Resource</span></p>
+               <!-- <div class="vimeo-wrapper"><iframe src="https://player.vimeo.com/video/160837197" class="vimeo_portfolio" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div> -->
+            <!-- <div class="index-subtitle">www.exhibitionspac.es</div><br> -->
+              <div class="stake">
+                <div><img src="picture/0.png"/></div>
+                <div><img data-lazy="index/exhibitionspaces/1.png"/></div>
+                <div><img data-lazy="index/exhibitionspaces/2.png"/></div>
+                <div><img data-lazy="index/exhibitionspaces/3.png"/></div>
+                <div><img data-lazy="index/exhibitionspaces/tutorial-2.png"/></div>
+                <div><img data-lazy="index/exhibitionspaces/tutorial-2-together.png"/></div>
+                <div><img data-lazy="index/exhibitionspaces/tutorial-3.png"/></div>
+                <div><img data-lazy="index/exhibitionspaces/tutorial-3-together.png"/></div>
+                <div><img data-lazy="index/exhibitionspaces/tutorial-1.png"/></div>
+                <div><img data-lazy="index/exhibitionspaces/tutorial-1-together.png"/></div>
+              </div>
+          </div>
+        </article>
+
+    <article id="it-was-all-very-impressive-i" class="content">
+       <div class="index-full">
+        <div class="index-title">It Was All Very Impressive I, 2016</div>
+        <p class="more">'It Was All Very Impressive' is a domain that's hosted a few loosely connected website-based works. 'It Was All Very Impressive I' only existed online for a day as a series of digital artworks loosely broken down into chapters. Each project is hosted at <!-- A long-term project that has been moving through various forms and iterations. Each iteration is hosted at the same domain --><a href="http://itwasallveryimpressive.com" target="_blank" class="runover">www.itwasallveryimpressive.com</a></p>
+        <div class="vimeo-wrapper"><iframe src="https://player.vimeo.com/video/160837196" class="vimeo_portfolio" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+      </div>
+    </article>
+
+    <article id="it-was-all-very-impressive-ii" class="content">
+       <div class="index-full">
+        <div class="index-title">It Was All Very Impressive II, 2016</div>
+          <p class="more">'It Was All Very Impressive' is a domain that's hosted a few loosely connected website-based works. 'It Was All Very Impressive II' was only ever accessible as a projection within a physical gallery space. The mouse cursor couldn't be controlled by the user, and rested in the middle of the screen as the website was programmed to automatically scroll and display its sub-projects one after another. One sub-project was a constantly rearranging digital museum whose collection contained every 3d-scanned object made available online by major art institutions. Another was a series of generated digital paintings composed of randomly layered fragments from the digital museum. The next two projects were composed of digital forms floating across the screen. 'It Was All Very Impressive' looked to create a lineage for this body of 3d-scanned objects, one that exists alongside and perhaps in lieu of, its current proposed history.<a href="http://itwasallveryimpressive.com" target="_blank" class="runover">www.itwasallveryimpressive.com</a></p>
+  <!--       <div class="stake">
+          <div><img data-lazy="index/iwavi/7.jpg"/></div>
+          <div><img data-lazy="index/iwavi/8.jpg"/></div>
+          <div><img data-lazy="index/iwavi/2.jpg"/></div>
+          <div><img data-lazy="index/iwavi/3.jpg"/></div>
+          <div><img data-lazy="index/iwavi/5.jpg"/></div>
+          <div><img data-lazy="index/iwavi/6.jpg"/></div>
+
+          <div><img data-lazy="index/iwavi/title1.jpg"/></div>
+          <div><img data-lazy="index/iwavi/title2.jpg"/></div>
+          <div><img data-lazy="index/iwavi/title3.jpg"/></div>
+          <div><img data-lazy="index/iwavi/title4.jpg"/></div>
+          <div><img data-lazy="index/iwavi/title5.jpg"/></div>
+        </div> -->
+        <div class="vimeo-wrapper" style="margin-top: 25px;"><iframe src="https://player.vimeo.com/video/165898670" class="vimeo_portfolio" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        <!--<div class="index-subtitle more"><span class="subtitle" style="text-align:left">Second Iteration</span> was only accessible as a projection within a gallery space (error message when accessed outside of the space). This iteration was broken down into 4 sub-projects, "The Museum of Translated Objects," "Artifacts, Published Works," "Mirage, or, I am Large, I Contain Multitudes," "That Old Present Tense." The websites were programmed to auto-scroll and to automatically jump to the next page, refreshing itself and randomly shuffling and generating content.</div> -->
+      </div>
+    </article>
+
+      <article id="museum-of-translated-objects" class="content">
+          <div class="index-full">
+        <div class="index-title">Museum of Translated Objects, 2016</div>
+        <p class="more">This automatically rearranging and restarting website was only accessible in the gallery space during the installation of the second iteration of 'It Was All Very Impressive.' The 'Museum of Translated Objects' is a digital museum archiving every 3D object made available online by major art institutions. The 'Museum of Translated Objects' utilizes a rudimentary process for re-scanning the 3D digital objects made available. The objects are re-scanned by being photographed in 360° directly from a computer screen and the photos are photogrammetrically stitched together to generate new 3D spatial data, or new 3D objects. These new objects make up the collection of "translated" objects, and are made available in order to extend the objects' journeys through history.</p><p><span class="runover italic">Rearranging Website, Digital Archive</span></p>
+        <div class="stake">
+          <div><img src="picture/1.jpg"/></div>
+          <div><img data-lazy="index/museumoftranslatedobjects/2.jpg"/></div>
+          <div><img data-lazy="index/museumoftranslatedobjects/3.jpg"/></div>
+          <div><img data-lazy="index/museumoftranslatedobjects/museumthumb3.jpg"/></div>
+          <div><img data-lazy="index/museumoftranslatedobjects/museumthumb9.jpg"/></div>
+          <div><img data-lazy="index/museumoftranslatedobjects/museumthumb3.gif"/></div>
+          <div><img data-lazy="index/museumoftranslatedobjects/museumthumb2.gif"/></div>
+          <div><img data-lazy="index/museumoftranslatedobjects/museumthumb7.gif"/></div>
+        </div>
+      </div>
+    </article>
+
+      <article id="artifacts-published-works" class="content">
+          <div class="index-full">
+        <div class="index-title">Artifacts, Published Works, 2016</div>
+        <p class="more">The second part of the second iteration of 'It Was All Very Impressive.' Every 40 seconds 'Artifacts, Published Works' is refreshed, randomly layering fragments pulled from the 'Museum of Translated Objects' creating a new series of unique combinations every refresh.</p><p><span class="runover italic">Rearranging Website, Randomly Generated Images</span></p>
+        <div class="stake">
+          <div><img src="picture/0.jpg"/></div>
+          <div><img data-lazy="index/artifactspublishedworks/1.jpg"/></div>
+          <div><img data-lazy="index/artifactspublishedworks/2.jpg"/></div>
+          <div><img data-lazy="index/artifactspublishedworks/3.jpg"/></div>
+          <div><img data-lazy="index/artifactspublishedworks/4.jpg"/></div>
+        </div>
+      </div>
+    </article>
+
+    <article id="mirage-or-i-am-large-i-contain-multitudes" class="content">
+      <div class="index-full">
+        <div class="index-title">Mirage, or, I am Large, I Contain Multitudes, 2016</div>
+        <p class="more">The third part of the second iteration of 'It Was All Very Impressive.' Like in 'Artifacts, Published Works,' the images from 'The Museum of Translated Objects' is the generative source for this project. The objects from the museum collection are positioned in fabricated exhibitions, creating an index of potential.</p><p><span class="runover italic">Rearranging Website</span></p>
+        <div class="stake">
+          <div><img src="picture/0.jpg"/></div>
+          <div><img data-lazy="index/mirageoriamlargeicontainmultitudes/1.jpg"/></div>
+          <div><img data-lazy="index/mirageoriamlargeicontainmultitudes/2.jpg"/></div>
+          <div><img data-lazy="index/mirageoriamlargeicontainmultitudes/3.jpg"/></div>
+          <div><img data-lazy="index/mirageoriamlargeicontainmultitudes/4.jpg"/></div>
+          <div><img data-lazy="index/mirageoriamlargeicontainmultitudes/5.jpg"/></div>
+          <div><img data-lazy="index/mirageoriamlargeicontainmultitudes/6.jpg"/></div>
+          <div><img data-lazy="index/mirageoriamlargeicontainmultitudes/7.jpg"/></div>
+          <div><img data-lazy="index/mirageoriamlargeicontainmultitudes/8.jpg"/></div>
+        </div>
+      </div>
+    </article>
+
+      <article id="that-old-present-tense" class="content">
+      <div class="index-full">
+        <div class="index-title">That Old Present Tense, 2016</div>
+        <p class="more">The fourth and last part of the second iteration of 'It Was All Very Impressive.' 'That Old Present Tense' looks to fill the spaces in-between. Automatically scrolling websites with layering screens, books and prints.</p><p><span class="runover italic">Rearranging Website</span></p>
+        <div class="stake">
+          <div><img src="picture/1.jpg"/></div>
+          <div><img data-lazy="index/thatoldpresenttense/2.jpg"/></div>
+          <div><img data-lazy="index/thatoldpresenttense/3.jpg"/></div>
+          <div><img data-lazy="index/thatoldpresenttense/4.jpg"/></div>
+          <div><img data-lazy="index/thatoldpresenttense/5.jpg"/></div>
+          <div><img data-lazy="index/thatoldpresenttense/6.jpg"/></div>
+          <div><img data-lazy="index/thatoldpresenttense/7.jpg"/></div>
+          <div><img data-lazy="index/thatoldpresenttense/8.jpg"/></div>
+          <div><img data-lazy="index/thatoldpresenttense/a.jpg"/></div>
+          <div><img data-lazy="index/thatoldpresenttense/b.jpg"/></div>
+        </div>
+      </div>
+    </article>
+
+    <article id="on-edge" class="content">
+          <div class="index-full">
+        <div class="index-title">On Edge, 2016</div>
+        <p class="more">Stock images, screenshots and other photographs on borders and on edges as digital objects. <br> depths, borders, bridges, gates, lids, pages, divider, between, <br> to harrow <br> edge of the woods <br>
+  between sleeping and waking <br> <br> <br> printed in the risograph publication "Pothole" edited by Amanda Curreri and Jordan Tate <br> </p><p><span class="runover italic">Digital Objects </span></p>
+        <div class="stake">
+          <div><img src="picture/spread (2).jpg"/></div>
+          <div><img data-lazy="index/onedge/spread (4).jpg"/></div>
+          <div><img data-lazy="index/onedge/spread (5).jpg"/></div>
+          <div><img data-lazy="index/onedge/spread (1).jpg"/></div>
+          <div><img data-lazy="index/onedge/spread (3).jpg"/></div>
+          <div><img data-lazy="index/onedge/spread (6).jpg"/></div>
+        </div>
+      </div>
+    </article>
+
+    <article id="new-work" class="content">
+         <div class="index-full">
+        <div class="index-title">New Work, 2015</div>
+        <p class="more">Digital distortions within empty contemporary spaces, bending the architecture into and onto itself. <!-- Implied Installations are a part of a larger project, Documents. --></p><p><span class="runover italic">Digital Images, Video, Archival Prints</span></p>
+        <div class="stake">
+          <div><img src="picture/0000075.jpg"/></div>
+          <div><img data-lazy="index/newwork/0000081.jpg"/></div>
+          <div><img data-lazy="index/newwork/0000071.jpg"/></div>
+          <div><img data-lazy="index/newwork/0000078.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-01.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-1.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-10.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-2.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-3.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-4.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-5.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-6.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-7.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-8.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-9.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-11.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-12.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-13.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-14.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-15.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-16.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-17.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-18.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-19.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-20.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-21.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-22.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-23.jpg"/></div>
+          <div><img data-lazy="index/newwork/0-24.jpg"/></div>
+        </div><br>
+         <div class="vimeo-wrapper"><iframe src="https://player.vimeo.com/video/154935912" class="vimeo_portfolio" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        <div class="index-subtitle">New Work Trailer</div>
+      </div>
+    </article>
+
+    <article id="oy-on-time" class="content">
+      <div class="index-full">
+        <div class="index-title">Oy! On Time!, 2015</div>
+        <p class="more">The digital images and artworks made for 'Oy! On Time!' were made as pieces of a proposal for a solo show I wanted to have. 'Oy! On Time!' was held in two parts: on the browser— where one can look privately, the weight of the work heavier, offering itself as more contemplative and private, and in a gallery space— as cheap xerox transfer prints, poor translations of the digital ideal.</p><p><span class="runover italic">Pieces of Digital Proposal, Xerox Transfer Prints</span></p>
+        <div class="stake">
+          <div><img src="picture/1.jpg"/></div>
+          <div><img data-lazy="index/oyontime/4.jpg"/></div>
+          <div><img data-lazy="index/oyontime/0.jpg"/></div>
+          <div><img data-lazy="index/oyontime/01.jpg"/></div>
+          <div><img data-lazy="index/oyontime/2.jpg"/></div>
+          <div><img data-lazy="index/oyontime/11.jpg"/></div>
+          <div><img data-lazy="index/oyontime/3.jpg"/></div>
+          <div><img data-lazy="index/oyontime/5.jpg"/></div>
+          <div><img data-lazy="index/oyontime/6.jpg"/></div>
+          <div><img data-lazy="index/oyontime/7.jpg"/></div>
+          <div><img data-lazy="index/oyontime/8.jpg"/></div>
+          <div><img data-lazy="index/oyontime/9.jpg"/></div>
+          <div><img data-lazy="index/oyontime/10.jpg"/></div>
+          <div><img data-lazy="index/oyontime/12.jpg"/></div>
+          <div><img data-lazy="index/oyontime/13.jpg"/></div>
+          <div><img data-lazy="index/oyontime/14.jpg"/></div>
+        </div>
+      </div>
+
+    </article>
+
+    <article id="vie-vying" class="content">
+      <div class="index-full">
+        <div class="index-title">Vie Vying, 2015</div>
+        <p class="more">The works in 'Vie Vying' start as a small digital textures collected from different realms of digital media, and the textures are edited and multiplied and positioned in graphic design corporate mockup templates, giving them a distinct semi-recognizable shape and an implied physical form. <!-- Implied Installations are a part of a larger project, Documents. --></p><p><span class="runover italic">Digital Objects</span></p>
+        <div class="stake">
+          <div><img src="picture/0-1.jpg"/></div>
+          <div><img data-lazy="index/vievying/0-5.jpg"/></div>
+          <div><img data-lazy="index/vievying/0-9.jpg"/></div>
+          <div><img data-lazy="index/vievying/0-7.jpg"/></div>
+          <div><img data-lazy="index/vievying/0-3.jpg"/></div>
+          <div><img data-lazy="index/vievying/0-6.jpg"/></div>
+          <div><img data-lazy="index/vievying/0-8.jpg"/></div>
+          <div><img data-lazy="index/vievying/0-10.jpg"/></div>
+          <div><img data-lazy="index/vievying/0-41.jpg"/></div>
+        </div>
+      </div>
+    </article>
+
+    <article id="blghded" class="content">
+      <div class="index-full">
+        <div class="index-title">blghded, 2015</div>
+        <p class="more">Layered appropriated marks from the some of the most expensive paintings in history<!--  over decorative textures and found images-->.</p><p><span class="runover italic">Digital Objects</span></p>
+        <div class="stake">
+          <div><img src="picture/1.jpg"/></div>
+          <div><img data-lazy="index/blghded/2.jpg"/></div>
+          <div><img data-lazy="index/blghded/ded.jpg"/></div>
+          <div><img data-lazy="index/blghded/ded0.jpg"/></div>
+          <div><img data-lazy="index/blghded/ded1.jpg"/></div>
+        </div>
+      </div>
+    </article>
+
+    <article id="martyr-images" class="content">
+      <div class="index-full">
+        <div class="index-title">Martyr Images, 2015</div>
+        <p class="more">Images were selected from the Web Gallery of Art's search results for 'Martyr.' The images were put through a process of digital reduction, focusing on the shapes of the bodies, but stripping the images of any historic specificity. <!-- Implied Installations are a part of a larger project, Documents. --></p><p><a href="https://drive.google.com/folderview?id=0B445ruvCCOQpWmRUNF91ak5UU2c&usp=sharing" target="_blank" class="runover">See the digital collection</a>  (21 images)<br><br><span class="runover italic">Digital Installation</span></p>
+        <div class="stake">
+          <div><img src="picture/edit1.jpg"/></div>
+          <div><img data-lazy="index/martyrimages/work1.jpg"/></div>
+          <div><img data-lazy="index/martyrimages/work2.jpg"/></div>
+          <div><img data-lazy="index/martyrimages/edit3.jpg"/></div>
+          <div><img data-lazy="index/martyrimages/edit4.jpg"/></div>
+          <div><img data-lazy="index/martyrimages/edit5.jpg"/></div>
+          <div><img data-lazy="index/martyrimages/edit5-2-1.jpg"/></div>
+          <div><img data-lazy="index/martyrimages/edit5-3-1.jpg"/></div>
+          <div><img data-lazy="index/martyrimages/edit6.jpg"/></div>
+          <div><img data-lazy="index/martyrimages/edit2.jpg"/></div>
+        </div>
+      </div>
+    </article>
+
+    <article id="monument-feed" class="content">
+      <div class="index-full">
+        <div class="index-title">Monument Feed, 2014</div>
+        <p class="more">Photographs were created by picking fragments from the first listed image on the wikipedia article for 'Monument.' The first photograph is of a Harvest Moon rising over Washington’s Lincoln Memorial, Washington Monument, and US Capitol. Each fragmented image’s field was digitally expanded on, positioning it in a new focus as something much smaller but grander. Look on my works, ye Mighty, and despair!</p><p><span class="runover italic">Video, Digital Photographs</span></p>
+  <!--       <div class="index-subtitle"><span class="subtitle" style="text-align:left">False</span></div> -->
+        <div class="stake">
+
+          <div><img src="picture/monument1.jpg"/></div>
+          <div><img data-lazy="index/monument/monument2.jpg"/></div>
+          <div><img data-lazy="index/monument/monument3.jpg"/></div>
+          <div><img data-lazy="index/monument/monument4.jpg"/></div>
+          <div><img data-lazy="index/monument/monument5.jpg"/></div>
+          <div><img data-lazy="index/monument/monument6.jpg"/></div>
+          <div><img data-lazy="index/monument/Untitled-2.jpg"/></div>
+
+        </div><br>
+          <div class="vimeo-wrapper"><iframe src="https://player.vimeo.com/video/145918800" class="vimeo_portfolio" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+      </div>
+    </article>
+
+<!--     <article id="documents" class="content">
+      <div class="index-full">
+        <div class="index-title">Exhibition Spac.es, 2016</div>
+        <p class="more">I created my own database of over 3000 emptied contemporary exhibition spaces. The database serves as a resource for mocking up exhibition ideas and proposals, and became a core conceptual aspect to my work. I began the website Exhibition Spac.es with the goal of providing this same resource for other emerging and early-career artists in establishing their online and documented presence. Exhibition Spac.es is a regularly updated free database of high-resolution emptied contemporary exhibition spaces and frames, as well as tutorials and resources to aid less digital-savvy artists compile their own non-real documentation or implied installations.<a href="http://exhibitionspac.es" target="_blank" class="runover">www.exhibitionspac.es</a></p><p><span class="runover italic">Rearranging Website</span></p>
+        <div class="stake">
+          <div><img src="picture/screenshot.jpg"/></div>
+        </div>
+      </div>
+    </article> -->
+
+
+    <article id="seeing-lassoing-wild-horses" class="content">
+      <div class="index-full">
+        <div class="index-title">Seeing Lassoing Wild Horses in 360°, 2014</div>
+        <p class="more">'Lassoing Wild Horses' is one of the first objects in the Met's collection to be photographed and made available online in 360°. I created a 3D scan of the object by taking photos of the bronze on the screen, and then further iterations were made of each new version, offering further interpretations of this century-year-old bronze as it continues its journey through forms of documentation and representation.</p><p><a href="https://drive.google.com/file/d/0B445ruvCCOQpRGJzaWpYN1ItdW8/view?usp=sharing" target="_blank" class="runover">Download the PDF</a>  (6 MB)<br><span class="runover italic">E-Book, Re-scanned 3d Objects</span></p>
+        <div class="stake">
+
+          <div><img src="picture/1-cover.jpg"/></div>
+          <div><img data-lazy="index/lassoing/2.jpg"/></div>
+          <div><img data-lazy="index/lassoing/3.jpg"/></div>
+          <div><img data-lazy="index/lassoing/4.jpg"/></div>
+          <div><img data-lazy="index/lassoing/5.jpg"/></div>
+
+        </div>
+      </div>
+    </article>
+
+    <article id="money-landscape-money" class="content">
+      <div class="index-full">
+        <div class="index-title">$ Landscape $, 2014</div>
+        <p class="more">'$ Landscape $' is comprised of various physical and digital ephemeral iterations. Each iteration contains dense overlapping drawings of the most expensive buildings in the world.</p><p><span class="runover italic">Ink on Wall, Digital Installation</span></p>
+        <div class="stake">
+
+          <div><img src="picture/6.jpg"/></div>
+          <div><img data-lazy="index/landscape/1.jpg"/></div>
+          <div><img data-lazy="index/landscape/2.jpg"/></div>
+          <div><img data-lazy="index/landscape/9.jpg"/></div>
+          <div><img data-lazy="index/landscape/3.jpg"/></div>
+          <div><img data-lazy="index/landscape/4.jpg"/></div>
+          <div><img data-lazy="index/landscape/8.jpg"/></div>
+
+        </div>
+      </div>
+    </article>
+
+    <article id="everyone-looks-so-familiar" class="content">
+         <div class="index-full">
+        <div class="index-title">Everyone Looks So Familiar, 2014</div>
+        <p class="more"><!--A portrait painting offers a lasting likeness for it's sitter, be it a religious or political leader, middle class citizen or simply an artist's model. Depending on how an image survives the various changing cultural situations it's passed through, the immediate context and the sitter's identity is often lost. For 'Everyone Looks So Familiar,' nameless -->Nameless portraits from throughout 15th to 19th century European art are reduced to simplified ink drawings, and then further reduced as only a 'digital selection,' barely separating the drawing from the white space of the webpage. The 'digital selection' is used as an allusion to designate something that doesn't wholly exist or hold form. The portraits are diminished to how we might view them now, as aesthetic husks of lives and memories that weren't quite influential enough. 'His online series Everyone Looks So Familiar, shows a set of Renaissance and Baroque figures rendered in the flickering line of a capture tool. All other pixel information is removed and we are left with the equivalent of a digital x-ray of these images. These works use the data of imagery to raise issues of reproduction in the digital age and the future (and perhaps unstoppable) predominance of online experiences with artwork.' — Gregory Thielker</p><p><a href="index/everyone-looks-so-familiar" target="_blank" class="runover italic">View Web Piece</a><br><br><span class="runover italic">Selection Drawings</span></p>
+
+          <div class="exhausted-prev"><img src="picture/woman (2).gif"/></div>
+
+      </div>
+    </article>
+
+    <article id="contrived-permanence" class="content">
+      <div class="index-full">
+        <div class="index-title">Contrived/ Permanence, 2013</div>
+        <p class="more">The mural portion of 'Contrived/Permanence' is a composite drawing that consists of fragments of eight historical monuments that were built as memorials. The mural is paired with a set of postcards that pull directly from sensationalized quotes describing the source monuments.</p><p><span class="runover italic">Ink on Wall, Postcard Display Rack</span></p>
+        <div class="stake">
+
+          <div><img src="picture/6.jpg"/></div>
+          <div><img data-lazy="index/contrivedpermanence/7.jpg"/></div>
+          <div><img data-lazy="index/contrivedpermanence/2.jpg"/></div>
+          <div><img data-lazy="index/contrivedpermanence/3.jpg"/></div>
+          <div><img data-lazy="index/contrivedpermanence/4.jpg"/></div>
+          <div><img data-lazy="index/contrivedpermanence/5.jpg"/></div>
+
+        </div>
+      </div>
+    </article>
+
+    <article id="unpublished-stories" class="content">
+      <div class="index-full">
+        <div class="index-title">Unpublished Stories, 2013</div>
+        <p class="more">Solo show consisting of 6 ink wall drawings, a projected animation and a supplemental zine. "Unpublished Stories is an installation of wall-based paintings, which function as visual quotations from western art history and news images, as well as a series of lyrical gestures. The objective in this series, however, is the limited use of media, which recalls paint tools from Adobe Illustrator. In one overlapped portrait, there are three variations on the same face done in Cyan, Magenta, and Yellow." — Gregory Thielker</p><p><span class="runover italic">Ink on Wall, Video, Zine</span></p>
+        <div class="stake">
+
+          <div><img src="picture/2.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/3.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/4.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/5.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/6.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/7.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/8.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/8-2.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/9.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/11.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/12.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/13.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/book1.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/book2.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/book3.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/book4.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/book5.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/book6.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/book7.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/book8.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/book9.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/book10.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/book11.jpg"/></div>
+          <div><img data-lazy="index/unpublishedstories/book12.jpg"/></div>
+        </div>
+      </div>
+    </article>
+
+    <a href="http://joshsender.design" target="_blank"><article id="dead" class="content">
+      <div class="index-full">
+        <p>＼＼\\(*•̀ᴗ•́*)و ̑//／／</p>
+    </article></a>
+
+  </section>
+  </div>
+  <!-- end of the line -->
+
+</body>
+</html>
